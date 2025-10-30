@@ -21,6 +21,23 @@ No database required — just PHP and flat files.
 
 ---
 
+# 🔄 How It Works
+SES sends bounce/complaint notifications to SNS topics.
+
+SNS delivers those notifications to your HTTPS endpoint (sns-handler.php).
+
+The PHP script:
+
+Confirms the subscription automatically.
+
+Extracts subject, source, destinations, and event details.
+
+Writes them to bounces.log and complaints.log.
+
+The dashboard (feedback.html) reads those logs and displays them in tables.
+
+---
+
 ## 1. Create an SNS Topic
 
 Amazon SNS (Simple Notification Service) is how SES delivers bounce/complaint events to your server.
