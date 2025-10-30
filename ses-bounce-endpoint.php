@@ -1,4 +1,18 @@
 <?php
+/**
+ * Amazon SES SNS Handler
+ *
+ * DISCLAIMER:
+ * This script is provided "as is", without warranty of any kind.
+ * Use at your own risk. The author assumes no responsibility for
+ * errors or issues arising from its use.
+ *
+ * COPYRIGHT:
+ * Copyright (c) 2025 QikSoft.com.
+ * All rights reserved. Permission is granted to use, copy, and modify
+ * this script for personal or commercial projects, provided that
+ * this notice remains intact in all copies or substantial portions.
+ */
 // Fail-fast: only accept POST
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     http_response_code(405);
