@@ -100,6 +100,9 @@ SES only lets you send from verified addresses/domains.
 3. Or choose **Email address** if you just want one sender (e.g., `admin@yourdomain.com`).
    - SES will send a confirmation email.
    - Click the link inside to verify.
+  
+HOT TIP: BE SURE TO CHECK THE "INCLUDE ORIGINAL HEADERS" TO GET ALL THE NEEDED INFO ON FEEDBACK.HTML
+<img width="1134" height="339" alt="image" src="https://github.com/user-attachments/assets/1994947d-36d4-459e-a966-d6dc33e1ca59" />
 
 ---
 
@@ -127,6 +130,9 @@ Amazon provides special test addresses:
 
 - **Bounce test**: `bounce@simulator.amazonses.com`
 - **Complaint test**: `complaint@simulator.amazonses.com`
+
+<img width="1402" height="766" alt="image" src="https://github.com/user-attachments/assets/2ea9534f-deab-4cd1-afcf-72c7018eaca2" />
+
 
 Send an email through SES to those addresses. Within a few seconds:
 
